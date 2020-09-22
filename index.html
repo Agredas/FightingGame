@@ -18,13 +18,33 @@
     </div>
   </section>
 
+
   <!-- Segunda pantalla selección de personajes -->
 
   <section class="seccionVisible" id="fase2" style="display:none">
     <div class="general general2">
-        <button onclick="cambiaPantalla(3)">LLEVAME A LA PÁGINA 3</button>
+      <div class="column1">
+        <div class="character1"></div>
+        <div class="empty"></div>
+        <div class="character2"></div>
+      </div>
+      <div class="column2">
+        <button class="buttonReturn" onclick="cambiaPantalla(1)">RETURN</button>
+        <div class="characterInfo"></div>
+        <button class="buttonSelect" onclick="cambiaPantalla(3)">SELECT CHARACTER</button>
+      </div>
+      <div class="column3">
+        <div class="character3"></div>
+        <div class="empty"></div>
+        <div class="character4"></div>
+      </div>
     </div>
   </section>
+
+
+
+
+
 
   <!-- Tercera pantalla enfrentamiento -->
 
