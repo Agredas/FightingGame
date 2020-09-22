@@ -52,9 +52,30 @@ body{
 
 .column1{
   background-color: red;
-  width: 30%;
+  width: 25%;
   height: 95%;
 }
+
+.character1{
+  background-color: palegoldenrod;
+  height: 34%;
+}
+
+.jedi{
+ height: 100%;
+ width: 100%;
+}
+
+.empty{
+  background-color: palegreen;
+  height: 32%;
+}
+
+.character2{
+  background-color: paleturquoise;
+  height: 34%;
+}
+
 
 .column2{
   background-color:blue;
@@ -82,11 +103,19 @@ body{
 
 .column3{
   background-color: violet;
-  width: 30%;
+  width: 25%;
   height: 95%;
 }
 
+.character3{
+  background-color: palegoldenrod;
+  height: 34%;
+}
 
+.character4{
+  background-color: paleturquoise;
+  height: 34%;
+}
 
 
 
@@ -96,4 +125,13 @@ body{
 
 .general3 {
   background-color: red;
+}
+
+.buttonRestart{
+  font-family: 'VT323', monospace;
+  color: yellow;
+  background-color: black;
+  font-size: 2em;
+  border: 0.1em solid yellow;
+  cursor: pointer;
 }
