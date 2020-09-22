@@ -4,6 +4,7 @@ body{
   display: flex;
   text-align: center;
   justify-content: center;
+  font-family: 'VT323', monospace;
 }
 
 .seccionVisible {
