@@ -1,15 +1,15 @@
 {
-    "idleHeartbeats": 3096,
-    "navigatingHeartbeats": 350,
-    "totalCodingHeartbeats": 2881,
+    "idleHeartbeats": 4106,
+    "navigatingHeartbeats": 367,
+    "totalCodingHeartbeats": 3133,
     "languageHeartbeats": {
         "html": 1279,
-        "css": 1557,
-        "plaintext": 45
+        "css": 1764,
+        "plaintext": 90
     },
     "fileHeartbeats": {
         "index.html": 1279,
-        "css/style.css": 1557,
-        "c:\\Users\\Usuario\\Desktop\\FightingGame\\css\\style.css.git": 45
+        "css/style.css": 1764,
+        "c:\\Users\\Usuario\\Desktop\\FightingGame\\css\\style.css.git": 90
     }
 }

@@ -52,14 +52,14 @@ body{
 
 .column1{
   background-color: red;
-  width: 33%;
-  height: 2em;
+  width: 30%;
+  height: 95%;
 }
 
 .column2{
-  background-color: red;
-  width: 33%;
-  height: 2em;
+  background-color:blue;
+  width: 38%;
+  height: 95%;
 }
 
 .buttonReturn{
@@ -81,9 +81,9 @@ body{
 }
 
 .column3{
-  background-color: red;
-  width: 33%;
-  height: 2em;
+  background-color: violet;
+  width: 30%;
+  height: 95%;
 }
 
 
