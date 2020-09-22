@@ -1,16 +1,46 @@
+body{
+  margin: 0;
+  font-family: 'VT323', monospace;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
 .seccionVisible {
   background-color: black;
-  width: 100vw;
-  height: 100vh;
+  height: 100vh; 
+  width:  100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .general {
   width: 75%;
   height: 75%;
+  margin: 5em auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .general1 {
-  background-color: blue;
+  background-image: url(/img/galaxy_background.png);
+  display: flex;
+  flex-direction: column;
+}
+
+.starwarslogo{
+  width: 50%;
+  height: 50%;
+}
+
+.buttonStart{
+  font-family: 'VT323', monospace;
+  color: yellow;
+  background-color: black;
+  font-size: 2em;
+  margin-top: 5em;
+  border: 0.1em solid yellow;
 }
 
 .general2 {
