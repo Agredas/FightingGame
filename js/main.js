@@ -39,10 +39,10 @@ class Fighter{
 }
 
 
-let player1 = new Luchador("Jedi", 100, );
+let player1 = new Fighter("Jedi", 100, 20, 20, 5);
 
-let player2 = new Luchador("Mandalorian", 100,);
+let player2 = new Fighter("Mandalorian", 100, 22, 19, 4);
 
-let player3 = new Luchador("Sith", 100, );
+let player3 = new Fighter("Sith", 100, 24, 17, 3);
 
-let player4 = new Luchador("Wookie", 100, );
+let player4 = new Fighter("Wookie", 100, 20, 25, 0);
