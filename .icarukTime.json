@@ -1,19 +1,19 @@
 {
-    "idleHeartbeats": 6579,
-    "navigatingHeartbeats": 783,
-    "totalCodingHeartbeats": 5732,
+    "idleHeartbeats": 6711,
+    "navigatingHeartbeats": 855,
+    "totalCodingHeartbeats": 6070,
     "languageHeartbeats": {
         "html": 1840,
         "css": 2659,
         "plaintext": 135,
-        "javascript": 1051,
+        "javascript": 1389,
         "scminput": 47
     },
     "fileHeartbeats": {
         "index.html": 1840,
         "css/style.css": 2659,
         "c:\\Users\\Usuario\\Desktop\\FightingGame\\css\\style.css.git": 135,
-        "js/main.js": 1051,
+        "js/main.js": 1389,
         "scm\\git\\scm0\\input": 47
     }
 }

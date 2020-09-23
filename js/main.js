@@ -23,24 +23,30 @@ const cambiaPantalla = (valor) => {
   }
 }
 
+
+
 class Fighter{
 
-  constructor(name, health, strength, defense, luck){
+  constructor(name, health, strength, defense, origin, luck){
   
     this.name = name;
     this.health = health;
     this.strength = strength;
     this.defense = defense;
+    this.origin = origin;
     this.luck = luck;
       
   }
 }
 
 
-let player1 = new Fighter("Jedi", 100, 20, 20, 5);
+let jedi = new Fighter("Jedi", 100, 20, 20, "Jedi Order", 5);
+let mandalorian = new Fighter("Mandalorian", 100, 22, 19, "Mandalore", 4);
+let sith = new Fighter("Sith", 100, 24, 17, "Korriban", 3);
+let wookie = new Fighter("Wookie", 100, 20, 25, "Kashyyyk", 0);
 
-let player2 = new Fighter("Mandalorian", 100, 22, 19, 4);
 
-let player3 = new Fighter("Sith", 100, 24, 17, 3);
-
-let player4 = new Fighter("Wookie", 100, 20, 25, 0);
+let player1 = document.getElementById("player1");
+let player2 = document.getElementById("player2");
+let player3 = document.getElementById("player3");
+let player4 = document.getElementById("player4");
