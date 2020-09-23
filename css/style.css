@@ -52,7 +52,6 @@ body{
 }
 
 .column1{
-  background-color: red;
   width: 25%;
   height: 95%;
 }
@@ -65,11 +64,19 @@ body{
 .jedi{
  height: 100%;
  width: 100%;
+ cursor: pointer;
 }
 
-.empty{
-  background-color: palegreen;
-  height: 32%;
+.emptyTop{
+  height: 2.5em;
+}
+
+.emptyMiddle{
+  height: 16%;
+}
+
+.emptyBot{
+  height: 2.5em;
 }
 
 .character2{
@@ -77,6 +84,11 @@ body{
   height: 34%;
 }
 
+.mandalorian{
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+ } 
 
 .column2{
   background-color:blue;
@@ -93,6 +105,11 @@ body{
   cursor: pointer;
 }
 
+.characterInfo{
+  background-color: palegreen;
+  height: 84%;
+}
+
 .buttonSelect{
   font-family: 'VT323', monospace;
   color: yellow;
@@ -102,8 +119,8 @@ body{
   cursor: pointer;
 }
 
+
 .column3{
-  background-color: violet;
   width: 25%;
   height: 95%;
 }
@@ -113,12 +130,23 @@ body{
   height: 34%;
 }
 
+.sith{
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+ }
+
 .character4{
   background-color: paleturquoise;
   height: 34%;
 }
 
-
+.wookie{
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+ }
+ 
 
 
 

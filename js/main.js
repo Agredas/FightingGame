@@ -22,3 +22,27 @@ const cambiaPantalla = (valor) => {
       document.getElementById(pantalla).style.display = "none";
   }
 }
+
+class Fighter{
+
+  constructor(name, health, strength, defense, luck){
+  
+    this.name = name;
+    this.health = health;
+    this.strength = strength;
+    this.defense = defense;
+    this.luck = luck;
+  
+    this.medicine = 2;
+  
+  }
+}
+
+
+let player1 = new Luchador("Jedi", 100, );
+
+let player2 = new Luchador("Mandalorian", 100,);
+
+let player3 = new Luchador("Sith", 100, );
+
+let player4 = new Luchador("Wookie", 100, );
