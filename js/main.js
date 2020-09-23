@@ -6,7 +6,7 @@ const cambiaPantalla = (valor) => {
   let faseDestino = "fase" + valor;
 
   //A continuación creo un array con todas fases.
-  let arrayFases = ["fase1","fase2","fase3"];
+  let arrayFases = ["fase1","fase2","fase3", "fase4"];
 
   //El siguiente paso es incluir en arrayfases, todas las fases MENOS la de destino, para ello usamos
   //filter.
@@ -27,16 +27,21 @@ const cambiaPantalla = (valor) => {
 
 class Fighter{
 
-  constructor(name, health, strength, defense, origin, luck){
+  constructor(name, hp, damage, defense, origin, luck){
   
     this.name = name;
-    this.health = health;
-    this.strength = strength;
+    this.hp = hp;
+    this.damage = damage;
     this.defense = defense;
     this.origin = origin;
     this.luck = luck;
       
   }
+
+  receiveDmg1(dmg){
+    this.hp -= (dmg - this.armor);
+  }
+
 }
 
 
@@ -50,3 +55,36 @@ let player1 = document.getElementById("player1");
 let player2 = document.getElementById("player2");
 let player3 = document.getElementById("player3");
 let player4 = document.getElementById("player4");
+
+
+const choosePJ = (event) => {
+
+  console.log("Hello");
+} 
+
+player1.addEventListener("click", choosePJ)
+player2.addEventListener("click", choosePJ)
+player3.addEventListener("click", choosePJ)
+player4.addEventListener("click", choosePJ)
+
+/* 
+  switch (id) {
+
+      case "player1":
+          return jedi;
+      
+      case "player2":
+          return mandalorian;
+
+      case "player3":
+          return sith;
+
+      case "player4":
+          return wookie;
+
+      default:
+          "Select a character."
+      break;
+  }
+
+ */

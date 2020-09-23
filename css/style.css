@@ -56,14 +56,15 @@ body{
   height: 95%;
 }
 
-#player1{
+#hole1{
   background-color: palegoldenrod;
   height: 34%;
 }
 
-.jedi{
- height: 100%;
- width: 100%;
+.jediclass{
+ height: 90%;
+ width: 90%;
+ margin-top: 1em;
  cursor: pointer;
 }
 
@@ -79,19 +80,18 @@ body{
   height: 2.5em;
 }
 
-#player2{
+#hole2{
   background-color: paleturquoise;
   height: 34%;
 }
 
-.mandalorian{
+.mandalorianclass{
   height: 100%;
   width: 100%;
   cursor: pointer;
  } 
 
 .column2{
-  background-color:blue;
   width: 38%;
   height: 95%;
 }
@@ -105,9 +105,17 @@ body{
   cursor: pointer;
 }
 
+.textSelection{
+  font-family: 'VT323', monospace;
+  color: yellow;
+  background-color: black;
+  font-size: 1.5em;
+  border: 0.1em solid yellow;
+}
+
 .characterInfo{
   background-color: palegreen;
-  height: 84%;
+  height: 78.2%;
 }
 
 .buttonSelect{
@@ -125,32 +133,28 @@ body{
   height: 95%;
 }
 
-#player3{
+#hole3{
   background-color: palegoldenrod;
   height: 34%;
 }
 
-.sith{
+.sithclass{
   height: 100%;
   width: 100%;
   cursor: pointer;
  }
 
-#player4{
+#hole4{
   background-color: paleturquoise;
   height: 34%;
 }
 
-.wookie{
+.wookieclass{
   height: 100%;
-  width: 100%;
+  width: 80%;
   cursor: pointer;
  }
  
-
-
-
-
 
 .general3 {
   background-color: red;
