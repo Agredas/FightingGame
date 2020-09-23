@@ -56,7 +56,7 @@ body{
   height: 95%;
 }
 
-.character1{
+#player1{
   background-color: palegoldenrod;
   height: 34%;
 }
@@ -79,7 +79,7 @@ body{
   height: 2.5em;
 }
 
-.character2{
+#player2{
   background-color: paleturquoise;
   height: 34%;
 }
@@ -125,7 +125,7 @@ body{
   height: 95%;
 }
 
-.character3{
+#player3{
   background-color: palegoldenrod;
   height: 34%;
 }
@@ -136,7 +136,7 @@ body{
   cursor: pointer;
  }
 
-.character4{
+#player4{
   background-color: paleturquoise;
   height: 34%;
 }

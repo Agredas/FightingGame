@@ -32,9 +32,7 @@ class Fighter{
     this.strength = strength;
     this.defense = defense;
     this.luck = luck;
-  
-    this.medicine = 2;
-  
+      
   }
 }
 
