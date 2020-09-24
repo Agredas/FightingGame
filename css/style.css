@@ -105,7 +105,7 @@ body{
   cursor: pointer;
 }
 
-.textSelection{
+#textSelection{
   font-family: 'VT323', monospace;
   color: yellow;
   background-color: black;
@@ -167,4 +167,15 @@ body{
   font-size: 2em;
   border: 0.1em solid yellow;
   cursor: pointer;
+}
+
+
+.pj{
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10em;
+  height: 10em;
+
 }

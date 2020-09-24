@@ -57,9 +57,32 @@ let player3 = document.getElementById("player3");
 let player4 = document.getElementById("player4");
 
 
-const choosePJ = (event) => {
+let pjSelect1 = "";
+let pjSelect2 = "";
 
-  console.log("Hello");
+
+const choosePJ = (event) => {
+  
+  let selection = event.target.id;
+
+  if(pjSelect1 === ""){
+    
+    pjSelect1 = selection;
+
+    let textSelection = document.getElementById("textSelection");
+    textSelection.innerText = "Choose a 2º character for battle.";
+
+    pjSelect1 = idToPj(selection);
+
+  }else{
+
+    pjSelect2 = idToPj(selection);
+  }
+
+  console.log(pjSelect1, "pjSelect1");
+  console.log(pjSelect2, "pjSelect2")
+  let textSelection = document.getElementById("textSelection");
+  textSelection.innerText = "Press START to fight.";
 } 
 
 player1.addEventListener("click", choosePJ)
@@ -67,7 +90,9 @@ player2.addEventListener("click", choosePJ)
 player3.addEventListener("click", choosePJ)
 player4.addEventListener("click", choosePJ)
 
-/* 
+
+const idToPj = (id) => {
+
   switch (id) {
 
       case "player1":
@@ -83,8 +108,11 @@ player4.addEventListener("click", choosePJ)
           return wookie;
 
       default:
-          "Select a character."
+          "Choose a character, please."
       break;
   }
 
- */
+}
+
+
+

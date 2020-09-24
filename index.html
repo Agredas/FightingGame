@@ -40,9 +40,11 @@
 
       <div class="column2">
         <button class="buttonReturn" onclick="cambiaPantalla(1)">RETURN</button>
-        <div class="textSelection">Choose two characters for the battle</div>
-        <div class="characterInfo"></div>
-        <button class="buttonSelect" onclick="cambiaPantalla(3)">SELECT CHARACTER</button>
+        <div id="textSelection">Choose 2º characters for battle.</div>
+        <div id="characterInfo" class="characterInfo">
+          <div class="pj"></div>
+        </div>
+        <button class="buttonSelect" onclick="cambiaPantalla(3)">START</button>
       </div>
 
 
@@ -71,7 +73,7 @@
 
   <section class="seccionVisible" id="fase3" style="display:none">
     <div class="general general3">
-        <button class="buttonRestart" onclick="cambiaPantalla(1)">RESTART</button>
+        <button class="buttonReset" id="buttonResetGame" onclick="cambiaPantalla(1)">RESET GAME</button>
     </div>
   </section>
 
