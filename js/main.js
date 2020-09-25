@@ -4,51 +4,93 @@ const cambiaPantalla = (valor) => {
   //Ahora se a que pantalla quiero dirigirme al concatenar fase + valor que viene
   //por parámetro.
   let faseDestino = "fase" + valor;
-
+  
   //A continuación creo un array con todas fases.
   let arrayFases = ["fase1","fase2","fase3", "fase4"];
-
+  
   //El siguiente paso es incluir en arrayfases, todas las fases MENOS la de destino, para ello usamos
   //filter.
   arrayFases = arrayFases.filter(val => !faseDestino.includes(val));
-
+  
   //Primero habilitamos la fase a la que queremos ir
-
+  
   document.getElementById(faseDestino).style.display = "block";
-
+  
   //Finalmente deshabilitamos el resto
-
+  
   for(let pantalla of arrayFases){
-      document.getElementById(pantalla).style.display = "none";
+    document.getElementById(pantalla).style.display = "none";
   }
 }
 
 
 
 class Fighter{
-
-  constructor(name, hp, damage, defense, origin, luck){
   
+  constructor(name, hp, damage, defense, luck, img){
+    
     this.name = name;
     this.hp = hp;
     this.damage = damage;
     this.defense = defense;
-    this.origin = origin;
     this.luck = luck;
-      
+    this.img = img;
+    
   }
-
-  receiveDmg1(dmg){
-    this.hp -= (dmg - this.armor);
+  
+  attack = (enemy) => {
+    
+    let damage = this.dmg -= enemy.armor;
+    
+    if (damage < 0){
+      damage = 0;
+    }
+    
+    enemy.hp = enemy.hp - damage
+    
+    /* console.log("Daño: ", damage); */
+    
   }
-
 }
 
+let jedi = new Fighter("Jedi", 100, 20, 20, 5, "../img/jedi_left.png");
+let mandalorian = new Fighter("Mandalorian", 100, 22, 19, 4, "../img/mandalorian_left.png");
+let sith = new Fighter("Sith", 100, 24, 17, 3, "../img/sith_left.png");
+let wookie = new Fighter("Wookie", 100, 20, 25, 0, "../img/wookie_left.png");
 
-let jedi = new Fighter("Jedi", 100, 20, 20, "Jedi Order", 5);
-let mandalorian = new Fighter("Mandalorian", 100, 22, 19, "Mandalore", 4);
-let sith = new Fighter("Sith", 100, 24, 17, "Korriban", 3);
-let wookie = new Fighter("Wookie", 100, 20, 25, "Kashyyyk", 0);
+
+let turn = 1;
+const pressAttack = () => {
+  
+  turn++;
+  
+  if (turn % 2 === 0) {
+      pjSelect1.attack(pjSelect2);
+      features();
+   }else{
+      pjSelect2.attack(pjSelect1);
+      features();
+   }
+
+  if (pjSelect1.hp >= 1 || pjSelect2.hp >= 1){
+
+     buttonAttack = document.getElementById("buttonAttack").style.display = "block";
+
+  }else{
+  
+     buttonAttack = document.getElementById("buttonAttack").style.display = "none";
+    
+  }
+
+  console.log("pjSelect2", pjSelect2.hp);
+  console.log("pjSelec1", pjSelect1.hp);
+
+  if (pjSelect1.hp <= 0 || pjSelect2.hp <= 0){
+
+    cambiaPantalla(4);
+  }
+}
+
 
 
 let player1 = document.getElementById("player1");
@@ -69,21 +111,28 @@ const choosePJ = (event) => {
     
     pjSelect1 = selection;
 
+    pjSelect1 = idCh(selection);
+    
     let textSelection = document.getElementById("textSelection");
-    textSelection.innerText = "Choose a 2º character for battle.";
-
-    pjSelect1 = idToPj(selection);
+  textSelection.innerText = "Select a 2º character.";
 
   }else{
-
-    pjSelect2 = idToPj(selection);
+    pjSelect2 = idCh(selection);
+    cambiaPantalla(3);
   }
 
-  console.log(pjSelect1, "pjSelect1");
-  console.log(pjSelect2, "pjSelect2")
-  let textSelection = document.getElementById("textSelection");
-  textSelection.innerText = "Press START to fight.";
-} 
+  if(pjSelect1 === pjSelect2) {
+
+    let textSelection = document.getElementById("textSelection");
+    textSelection.innerText = "Select other character, please."
+    cambiaPantalla(2);
+
+  }
+
+}
+
+
+
 
 player1.addEventListener("click", choosePJ)
 player2.addEventListener("click", choosePJ)
@@ -91,7 +140,7 @@ player3.addEventListener("click", choosePJ)
 player4.addEventListener("click", choosePJ)
 
 
-const idToPj = (id) => {
+const idCh = (id) => {
 
   switch (id) {
 
@@ -115,4 +164,40 @@ const idToPj = (id) => {
 }
 
 
+const features = (event) => {
 
+  document.getElementById("pjSelect1Img").src = pjSelect1.img;
+  document.getElementById("pjSelect1Name").innerText = pjSelect1.name;
+  document.getElementById("pjSelect1Hp").innerText = pjSelect1.hp;
+  
+  document.getElementById("pjSelect2Img").src = pjSelect2.img;
+  document.getElementById("pjSelect2Name").innerText = pjSelect2.name;
+  document.getElementById("pjSelect2Hp").innerText = pjSelect2.hp;
+
+}
+
+
+const winner = () => {
+    
+  if (pjSelect1.vida <= 0) {
+
+      document.getElementById("winner").src = pjSelect2.imagen;
+
+      document.getElementById("winnerText").innerText = `${pjSelect2.nombre}`;
+
+  } else {
+      
+      document.getElementById("winner").src = pjSelect1.imagen;
+
+      document.getElementById("winnerText").innerText = `${pjSelect1.nombre}`;
+  }
+
+}
+
+
+const lifeCharacter = () => {
+
+  document.getElementById("pjSelect1Hp").style.width = pjSelect1.hp - "%";
+  document.getElementById("pjSelect2Hp").style.width = pjSelect2.hp - "%";
+
+}
