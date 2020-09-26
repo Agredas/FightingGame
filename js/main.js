@@ -48,15 +48,19 @@ class Fighter{
     
     enemy.hp = enemy.hp - damage
     
-    /* console.log("Daño: ", damage); */
+    lifeCharacter();
+    winner();
+
+    let textSelection2 = document.getElementById("textSelection2");
+        textSelection2.innerText = (`${this.name} causes ${damage} of damage to the ${enemy.name}.`);
     
   }
 }
 
-let jedi = new Fighter("Jedi", 100, 20, 20, 5, "../img/jedi_left.png");
-let mandalorian = new Fighter("Mandalorian", 100, 22, 19, 4, "../img/mandalorian_left.png");
-let sith = new Fighter("Sith", 100, 24, 17, 3, "../img/sith_left.png");
-let wookie = new Fighter("Wookie", 100, 20, 25, 0, "../img/wookie_left.png");
+let jedi = new Fighter("Jedi", 100, 20, 20, 5, "img/jedi_left.png");
+let mandalorian = new Fighter("Mandalorian", 100, 22, 19, 4, "img/mandalorian_left.png");
+let sith = new Fighter("Sith", 100, 24, 17, 3, "img/sith_left.png");
+let wookie = new Fighter("Wookie", 100, 20, 25, 0, "img/wookie_left.png");
 
 
 let turn = 1;
@@ -179,17 +183,17 @@ const features = (event) => {
 
 const winner = () => {
     
-  if (pjSelect1.vida <= 0) {
+  if (pjSelect1.hp <= 0) {
 
-      document.getElementById("winner").src = pjSelect2.imagen;
+      document.getElementById("winner").src = pjSelect2.img;
 
-      document.getElementById("winnerText").innerText = `${pjSelect2.nombre}`;
+      document.getElementById("winnerText").innerText = `${pjSelect2.name}`;
 
   } else {
       
-      document.getElementById("winner").src = pjSelect1.imagen;
+      document.getElementById("winner").src = pjSelect1.img;
 
-      document.getElementById("winnerText").innerText = `${pjSelect1.nombre}`;
+      document.getElementById("winnerText").innerText = `${pjSelect1.name}`;
   }
 
 }

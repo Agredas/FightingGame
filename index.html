@@ -42,7 +42,7 @@
         <button class="buttonReturn" onclick="cambiaPantalla(1)">RETURN</button>
         <div id="textSelection">Choose 2º characters for battle</div>
         <div id="characterInfo" class="characterInfo">
-          <div class="pj"></div>
+          <div id="pj" class="pj"></div>
         </div>
       </div>
 
@@ -72,15 +72,60 @@
 
   <section class="seccionVisible" id="fase3" style="display:none">
     <div class="general general3">
-        <button class="buttonReset" id="buttonResetGame" onclick="cambiaPantalla(1)">RESET GAME</button>
+
+    <div class="firstLine">
+      <button class="buttonReset" id="buttonResetGame" onclick="cambiaPantalla(1)">RESET GAME</button></div>
+    
+
+    <div class="secondLine">
+      <div class="hole1Lines"></div>
+      <div class="hpLife">
+        <div id="pjSelect1Hp"></div>
+      </div>
+      <div class="hole2Lines"></div>
+      <div class="hpLife">
+        <div id="pjSelect2Hp"></div>
+      </div>
+      <div class="hole1Lines"></div>
     </div>
-    <button id="buttonAttack" onclick="pressAttack()" > ATTACK </button>
+
+    <div class="thirdLine">
+      <div class="hole3Lines"></div>
+      <div id="pjSelect1Img"></div>
+      <div class="hole4Lines"><button id="buttonAttack" onclick="pressAttack()" > ATTACK </button></div>
+      <div id="pjSelect2Img"></div>
+      <div class="hole5Lines"></div>
+    </div>
+    
+    <div class="fourthLine">
+      <div class="hole6Lines"></div>
+      <div id="pjSelect1Name"></div>
+      <div class="hole7Lines"></div>
+      <div id="pjSelect2Name"></div>
+    </div>
+
+  
+    <div class="fifthLine">
+      <div id="textSelection2"></div>
+    </div>
+    
+    </div>
   </section>
 
-
+  
 
   <section class="seccionVisible" id="fase4" style="display:none">
     <div class="general general4">
+      <img id="winner" src="">
+
+            <p class ="text" id="winnerText"></p>
+
+            <p class="text">ha ganado</p>
+            
+            <button id="buttonReset" onclick="cambiaPantalla(1)">Volver a jugar</button>
+
+        </div>
+
   </section>
 
   <script src="js/main.js"></script>
