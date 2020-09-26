@@ -40,13 +40,13 @@ class Fighter{
   
   attack = (enemy) => {
     
-    let damage = this.dmg -= enemy.armor;
+    let damage = this.dmg - enemy.armor;
     
     if (damage < 0){
       damage = 0;
     }
     
-    enemy.hp = enemy.hp - damage
+    enemy.hp = enemy.hp - damage;
     
     lifeCharacter();
     winner();
@@ -78,16 +78,13 @@ const pressAttack = () => {
 
   if (pjSelect1.hp >= 1 || pjSelect2.hp >= 1){
 
-     buttonAttack = document.getElementById("buttonAttack").style.display = "block";
+    let buttonAttack = document.getElementById("buttonAttack").style.display = "block";
 
   }else{
   
-     buttonAttack = document.getElementById("buttonAttack").style.display = "none";
+    let buttonAttack = document.getElementById("buttonAttack").style.display = "block";
     
   }
-
-  console.log("pjSelect2", pjSelect2.hp);
-  console.log("pjSelec1", pjSelect1.hp);
 
   if (pjSelect1.hp <= 0 || pjSelect2.hp <= 0){
 
@@ -113,12 +110,10 @@ const choosePJ = (event) => {
 
   if(pjSelect1 === ""){
     
-    pjSelect1 = selection;
-
     pjSelect1 = idCh(selection);
     
     let textSelection = document.getElementById("textSelection");
-  textSelection.innerText = "Select a 2º character.";
+    textSelection.innerText = "Select a 2º character.";
 
   }else{
     pjSelect2 = idCh(selection);
@@ -184,15 +179,11 @@ const features = (event) => {
 const winner = () => {
     
   if (pjSelect1.hp <= 0) {
-
       document.getElementById("winner").src = pjSelect2.img;
-
       document.getElementById("winnerText").innerText = `${pjSelect2.name}`;
 
   } else {
-      
       document.getElementById("winner").src = pjSelect1.img;
-
       document.getElementById("winnerText").innerText = `${pjSelect1.name}`;
   }
 
