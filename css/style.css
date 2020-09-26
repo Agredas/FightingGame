@@ -335,8 +335,24 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
+
+
+#winnerText{
+  background-color: red;
+  width: 10em;
+  height: 5em;
+  font-family: 'VT323', monospace;
+  color: yellow;
+  background-color: black;
+  font-size: 2em;
+  border: 0.1em solid yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
 
 #winner {
   height: 40%;
