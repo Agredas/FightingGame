@@ -305,6 +305,7 @@ body{
   font-size: 2em;
   border: 0.1em solid yellow;
   margin-top: 2em;
+  cursor: pointer;
 }
 
 
@@ -335,8 +336,6 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
 }
 
 #winner {
