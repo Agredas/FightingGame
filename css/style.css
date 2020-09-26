@@ -25,7 +25,7 @@ body{
 }
 
 .general1 {
-  background-image: url(img/galaxy_background.png);
+  background-image: url(/img/galaxy_background.png);
   display: flex;
   flex-direction: column;
 }
@@ -46,7 +46,7 @@ body{
 }
 
 .general2 {
-  background-image: url(img/galaxy_background.png);
+  background-image: url(/img/galaxy_background.png);
   display: flex;
   flex-direction: row;
 }
@@ -163,7 +163,7 @@ body{
 
 
 .general3 {
-  background-image: url(img/galaxy_background.png);
+  background-image: url(/img/galaxy_background.png);
   display: flex;
   flex-direction: column;
 }
@@ -325,7 +325,7 @@ body{
 }
 
 .general4 {
-  background-image: url(img/galaxy_background.png);
+  background-image: url(/img/galaxy_background.png);
   display: flex;
   flex-direction: column;
   justify-content: center;
