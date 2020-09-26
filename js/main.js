@@ -151,10 +151,10 @@ const features = (event) => {
 const winner = () => {
   if (pjSelect1.hp <= 0) {
       document.getElementById("winner").src = pjSelect2.img;
-      document.getElementById("winnerText").innerText = `${pjSelect2.name} will rule the galaxy.`;
+      document.getElementById("winnerText").innerText = `${pjSelect2.name}\t will rule the galaxy.`;
   } else {
       document.getElementById("winner").src = pjSelect1.img;
-      document.getElementById("winnerText").innerText = `${pjSelect1.name} will rule the galaxy.`;
+      document.getElementById("winnerText").innerText = `${pjSelect1.name}\t will rule the galaxy.`;
   }
 }
 
