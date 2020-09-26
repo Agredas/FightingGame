@@ -23,6 +23,11 @@ const cambiaPantalla = (valor) => {
   for(let pantalla of arrayFases){
     document.getElementById(pantalla).style.display = "none";
   }
+
+  if (valor === 1) {
+
+    reset();
+  }
 }
 
 class Fighter{
@@ -162,3 +167,20 @@ const lifeCharacter = () => {
   document.getElementById("pjSelect1Hp").style.width = pjSelect1.hp + "%";
   document.getElementById("pjSelect2Hp").style.width = pjSelect2.hp + "%";
 }
+
+
+const reset = document.getElementById("buttonResetGame");
+
+
+
+    reset.addEventListener('click', () => {
+
+      pjSelect1 = "";
+      pjSelect2 = "";
+    
+      textSelection = "";
+      textSelection2 = "";
+    window.location.reload();
+
+
+});
