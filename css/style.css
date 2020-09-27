@@ -373,10 +373,11 @@ body{
 
 .fifthLine{
   height: 10em;
-  width: 20em;
+  width: 15em;
   display: flex;
   justify-content: center;
   text-align: center;
+  margin-top: 2em;
 }
 
 #textSelection2{
