@@ -23,11 +23,6 @@ const cambiaPantalla = (valor) => {
   for(let pantalla of arrayFases){
     document.getElementById(pantalla).style.display = "none";
   }
-
-  if (valor === 1) {
-
-    reset();
-  }
 }
 
 class Fighter{
@@ -70,8 +65,9 @@ let jedi = new Fighter("Jedi", 100, 21, 5, 5, "img/jedi_left.png");
 let mandalorian = new Fighter("Mandalorian", 100, 22, 3, 4, "img/mandalorian_left.png");
 let sith = new Fighter("Sith", 100, 24, 1, 3, "img/sith_left.png");
 let wookie = new Fighter("Wookie", 100, 20, 7, 0, "img/wookie_left.png");
-let turn = 1;
 
+
+let turn = 1;
 
 const pressAttack = () => {
 
@@ -170,7 +166,6 @@ const lifeCharacter = () => {
 
 
 const reset = (a, b) => {
-  document.getElementById("buttonResetGame");
     a = "";
     b = "";
     textSelection = "";
