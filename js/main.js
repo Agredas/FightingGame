@@ -66,7 +66,7 @@ class Fighter{
   }
 }
 
-let jedi = new Fighter("Jedi", 100, 20, 5, 5, "img/jedi_left.png");
+let jedi = new Fighter("Jedi", 100, 21, 5, 5, "img/jedi_left.png");
 let mandalorian = new Fighter("Mandalorian", 100, 22, 3, 4, "img/mandalorian_left.png");
 let sith = new Fighter("Sith", 100, 24, 1, 3, "img/sith_left.png");
 let wookie = new Fighter("Wookie", 100, 20, 7, 0, "img/wookie_left.png");

@@ -28,6 +28,7 @@ body{
   background-image: url(../img/galaxy_background.png);
   display: flex;
   flex-direction: column;
+  margin-top: 3.4em;
 }
 
 .starwarslogo{
@@ -112,8 +113,23 @@ body{
 }
 
 .characterInfo{
-  background-color: palegreen;
   height: 78.2%;
+  display: flex;
+  flex-direction: row;
+}
+
+.column1pj{
+  width: 50%;
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+}
+
+.column2pj{
+  width: 50%;
+  height: 100%;
+  display:flex;
+  flex-direction: column;
 }
 
 .column3{
@@ -151,16 +167,60 @@ body{
 }
 
 
-.pj{
-  background-color: green;
+.pj1{
+  font-family: 'VT323', monospace;
+  color: yellow;
+  background-color: black;
+  font-size: 2em;
+  border: 0.1em solid yellow;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 10em;
-  height: 10em;
-
+  width: 5em;
+  height: 4em;
 }
 
+.pj2{
+  font-family: 'VT323', monospace;
+  color: yellow;
+  background-color: black;
+  font-size: 2em;
+  border: 0.1em solid yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5em;
+  height: 4em;
+  margin-top: 4.2em;
+}
+
+.pj3{
+  font-family: 'VT323', monospace;
+  color: yellow;
+  background-color: black;
+  font-size: 2em;
+  border: 0.1em solid yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5em;
+  height: 4em;
+  margin-left: 1.7em;
+}
+
+.pj4{
+  font-family: 'VT323', monospace;
+  color: yellow;
+  background-color: black;
+  font-size: 2em;
+  border: 0.1em solid yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5em;
+  height: 4em;
+  margin-top: 4.2em;
+}
 
 .general3 {
   background-image: url(../img/galaxy_background.png);
@@ -201,8 +261,9 @@ body{
 
 .hpLife{
   height: 2em;
-  background-color: green;
+  background-color: black;
   width: 30%;
+  border: yellow solid 0.5em;
 
 }
 
@@ -239,6 +300,9 @@ body{
 
 .hole4Lines{
   width: 23em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hole5Lines{
