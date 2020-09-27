@@ -169,18 +169,11 @@ const lifeCharacter = () => {
 }
 
 
-const reset = document.getElementById("buttonResetGame");
-
-
-
-    reset.addEventListener('click', () => {
-
-      pjSelect1 = "";
-      pjSelect2 = "";
-    
-      textSelection = "";
-      textSelection2 = "";
+const reset = (a, b) => {
+  document.getElementById("buttonResetGame");
+    a = "";
+    b = "";
+    textSelection = "";
+    textSelection2 = "";
     window.location.reload();
-
-
-});
+};
